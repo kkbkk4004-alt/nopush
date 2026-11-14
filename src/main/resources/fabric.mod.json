@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "nopush",
+  "version": "1.0.0",
+  "name": "NoPush",
+  "description": "Stops the client from pushing you out of blocks. Toggle with N.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.nopush.NoPushClient"
+    ]
+  },
+  "mixins": [
+    "nopush.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
